@@ -1,0 +1,1 @@
+let isCheckingType:boolean = true
