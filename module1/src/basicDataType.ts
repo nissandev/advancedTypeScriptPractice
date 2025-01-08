@@ -80,7 +80,7 @@ console.log(strLength1); // Output: 11
 
 // reference type---> object
 type Person = {
-  company?: "JS ENCODER"; //literal type  and optional type
+  readonly company?: "JS ENCODER"; //literal type  and optional type // readonly type when it not be changeable 
   name: string;
   age?: number; //optional properties
   isStudent: boolean;
@@ -97,3 +97,5 @@ let user: Person = {
   name: "nissan",
   isStudent: false,
 };
+
+person.company ='JS ENCODER'
