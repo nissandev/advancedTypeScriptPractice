@@ -80,12 +80,14 @@ console.log(strLength1); // Output: 11
 
 // reference type---> object
 type Person = {
+  company?: "JS ENCODER"; //literal type  and optional type
   name: string;
-  age?: number; //optional properties 
-   isStudent: boolean;
+  age?: number; //optional properties
+  isStudent: boolean;
 };
 
 let person: Person = {
+  company: "JS ENCODER",
   name: "John Doe",
   age: 25,
   isStudent: true,
