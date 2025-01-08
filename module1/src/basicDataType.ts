@@ -15,9 +15,7 @@ let data: null = null;
 let data2: undefined = undefined;
 
 // symbol
-let id:symbol = Symbol("id");
-
-
+let id: symbol = Symbol("id");
 
 // any
 let notSure: any = 4;
@@ -79,3 +77,21 @@ console.log(c1); // Output: 1
 let someValue1 = "Hello World";
 let strLength1 = (someValue as string).length;
 console.log(strLength1); // Output: 11
+
+// reference type---> object
+type Person = {
+  name: string;
+  age?: number; //optional properties 
+   isStudent: boolean;
+};
+
+let person: Person = {
+  name: "John Doe",
+  age: 25,
+  isStudent: true,
+};
+
+let user: Person = {
+  name: "nissan",
+  isStudent: false,
+};
