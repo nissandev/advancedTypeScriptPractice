@@ -11,4 +11,25 @@
   const friend: string[] = ["nissan", "rakib", "roki"];
   const bestFriend:string[]=["azmin","Najim","Abir"]
   friend.push(...bestFriend)
+
+
+
+//   now use spread operator for object
+
+const developers ={
+    frontend:"Nissan",
+    backend:"jessan"
+}
+
+const otherTeam ={
+    floorInc:"Sojal",
+    SQA:"Arif"
+}
+
+const jsEmployee ={
+    ...developers,
+    ...otherTeam
+}
+
+
 }
