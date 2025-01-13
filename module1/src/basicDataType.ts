@@ -80,7 +80,7 @@ console.log(strLength1); // Output: 11
 
 // reference type---> object
 type Person = {
-  readonly company?: "JS ENCODER"; //literal type  and optional type // readonly type when it not be changeable 
+  readonly company?: "JS ENCODER"; //literal type  and optional type // readonly type when it not be changeable
   name: string;
   age?: number; //optional properties
   isStudent: boolean;
@@ -98,4 +98,14 @@ let user: Person = {
   isStudent: false,
 };
 
-person.company ='JS ENCODER'
+person.company = "JS ENCODER";
+
+const addBalance = (num1: number, num2: number) => num1 + num2;
+// same variable declare error though it on another page
+const poorUser = {
+  name: "Niloy",
+  balance: 1000,
+  addBalance(balance: number) {
+    return `my current balance is ${this.balance + balance}`;
+  },
+};
