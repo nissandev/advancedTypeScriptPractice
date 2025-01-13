@@ -9,27 +9,30 @@
 
   //   learn spread operator in typescript
   const friend: string[] = ["nissan", "rakib", "roki"];
-  const bestFriend:string[]=["azmin","Najim","Abir"]
-  friend.push(...bestFriend)
+  const bestFriend: string[] = ["azmin", "Najim", "Abir"];
+  friend.push(...bestFriend);
 
+  //   now use spread operator for object
 
+  const developers = {
+    frontend: "Nissan",
+    backend: "jessan",
+  };
 
-//   now use spread operator for object
+  const otherTeam = {
+    floorInc: "Sojal",
+    SQA: "Arif",
+  };
 
-const developers ={
-    frontend:"Nissan",
-    backend:"jessan"
-}
-
-const otherTeam ={
-    floorInc:"Sojal",
-    SQA:"Arif"
-}
-
-const jsEmployee ={
+  const jsEmployee = {
     ...developers,
-    ...otherTeam
-}
+    ...otherTeam,
+  };
 
-
+  //   how can we received dynamic arguments in a function?
+  const myFriends = (...friends: string[]) => {
+    friends.forEach((friend: string) => {
+      console.log(friend);
+    });
+  };
 }
