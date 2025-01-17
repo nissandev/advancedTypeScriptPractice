@@ -1,4 +1,6 @@
 // destructuring
+
+// object
 const user = {
   id: 10,
   name: {
@@ -10,3 +12,16 @@ const user = {
 };
 
 const { contact,name:{firstName} } = user;
+
+
+// array destructuring
+const myFriends =[
+    "Fhysal",
+    "Emon",
+    "Lemon",
+    "Milon"
+]
+
+
+const [,,bestFriend,...rest]=myFriends
+console.log(bestFriend)
